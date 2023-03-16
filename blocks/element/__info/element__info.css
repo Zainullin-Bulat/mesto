@@ -1,0 +1,7 @@
+.element__info {
+    padding: 0;
+    margin: 25px 15px 25px 21px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
