@@ -6,7 +6,7 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 1280px) {
-    .line {
+    .header__line {
         padding-top: calc(31.6px + (41 - 31.6)*((100vw - 320px)/(1280 - 320)));
     }
 }

@@ -1,5 +1,11 @@
 .elements {
     display: flex;
-    padding: 46.25px 0 0 0;
+    padding: 51px 0 0 0;
     margin: 0 auto;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1280px) {
+    .elements {
+        padding-top: calc(36px + (51 - 36)*((100vw - 320px)/(1280 - 320)));
+    }
 }

@@ -1,0 +1,27 @@
+.profile__edit {
+    padding: 0;
+    margin: 15px 0 9px 18px;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
+    background-color: black;
+    background-image: url(../../../images/edit.svg);
+    background-size: 7px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    grid-area: edit;
+    align-self: center;
+}
+
+.profile__edit:hover {
+    opacity: 0.6;
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) {
+    .profile__edit {
+        width: calc(18px + (24 - 18)*((100vw - 320px)/(1023 - 320)));
+        height: calc(18px + (24 - 18)*((100vw - 320px)/(1023 - 320)));
+        margin: 9px 0 6px 10px;
+    }
+}
