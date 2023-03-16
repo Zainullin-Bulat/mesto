@@ -1,7 +1,7 @@
 .popup__form {
     max-width: 358px;
     width: 100%;
-    padding: 34px 0 37px 0;
+    padding: 34px 0 0 0;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -11,6 +11,5 @@
     .popup__form {
         max-width: calc(238px + (358 - 238)*((100vw - 320px)/(1023 - 320)));
         padding-top: calc(25px + (34 - 25)*((100vw - 320px)/(1023 - 320)));
-        padding-bottom: calc(25px + (37 - 25)*((100vw - 320px)/(1023 - 320)));
     }
 }

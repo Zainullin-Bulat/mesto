@@ -1,8 +1,12 @@
 let formElement = document.querySelector(".popup__form");
-let nameInput = document.querySelector(".popup__name");
-let descriptionInput = document.querySelector(".popup__description");
+let nameInput = document.querySelector("#Name");
+let descriptionInput = document.querySelector("#Description");
 let nameProfile = document.querySelector(".profile__name");
 let descriptionProfile = document.querySelector(".profile__description");
+let editBtn = document.querySelector(".profile__edit");
+let editProfile = document.querySelector(".popup");
+let closeBtn = document.querySelector(".popup__close");
+// let likeBtn = document.querySelectorAll(".element__like");
 
 function handleFormSubmit (evt) {
     evt.preventDefault();
@@ -13,29 +17,24 @@ function handleFormSubmit (evt) {
     editProfile.classList.remove("popup_opened");
 }
 
-formElement.addEventListener('submit', handleFormSubmit);
-
-let editBtn = document.querySelector(".profile__edit");
-let editProfile = document.querySelector(".popup");
-
-editBtn.addEventListener("click", function() {
+function popupOpened () {
     let nameDef = nameProfile.textContent;
     let descriptionDef = descriptionProfile.textContent;
     nameInput.value = nameDef;
     descriptionInput.value = descriptionDef;
     editProfile.classList.add("popup_opened");
-});
+}
 
-let closeBtn = document.querySelector(".popup__close");
-
-closeBtn.addEventListener("click", function() {
+function popupClosed () {
     editProfile.classList.remove("popup_opened");
-});
+}
 
-let likeBtn = document.querySelectorAll(".element__like");
+// likeBtn.forEach(function(likeBtns) {
+    // likeBtns.addEventListener("click", function() {
+        // this.setAttribute("style", "background-image: url(./images/like_active.svg)");
+    // });
+// });
 
-likeBtn.forEach(function(likeBtns) {
-    likeBtns.addEventListener("click", function() {
-        this.setAttribute("style", "background-image: url(./images/like_active.svg)");
-    });
-});
+formElement.addEventListener('submit', handleFormSubmit);
+closeBtn.addEventListener("click", popupClosed);
+editBtn.addEventListener("click", popupOpened);

@@ -1,6 +1,9 @@
 .element__image {
     border-radius: 10px 10px 0px 0px;
     display: block;
-    max-width: 100%;
+    width: 282px;
+    height: 282px;
+    width: 100%;
     min-height: auto;
+    object-fit: cover;
 }

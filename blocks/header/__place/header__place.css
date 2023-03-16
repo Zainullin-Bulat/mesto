@@ -1,15 +1,13 @@
-.header {
+.header__place {
     display: flex;
     padding: 0;
     margin: 0 auto;
     max-width: 880px;
     width: 100%;
-    height: 73px;
-    border-bottom: 1px solid rgba(84, 84, 84, 0.7);
 }
 
 @media screen and (min-width: 320px) and (max-width: 1280px) {
-    .header {
-        height: calc(55px + (73 - 55)*((100vw - 320px)/(1280 - 320)));
+    .header__place {
+        max-width: calc(282px + (880 - 282)*((100vw - 320px)/(1280 - 320)));
     }
 }

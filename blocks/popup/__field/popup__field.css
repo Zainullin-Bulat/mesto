@@ -5,6 +5,8 @@
     margin: 54px 0 0 0;
     display: flex;
     align-items: flex-start;
+    font-size: 14px;
+    line-height: 17px;
 }
 
 .popup__field:nth-of-type(2) {

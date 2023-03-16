@@ -4,8 +4,7 @@
     width: 24px;
     height: 24px;
     border: 1px solid #FFFFFF;
-    border-radius: 2px;
-    background-color: black;
+    background-color: transparent;
     background-image: url(../../../images/edit.svg);
     background-size: 7px;
     background-repeat: no-repeat;

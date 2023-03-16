@@ -1,4 +1,4 @@
-.popup__text {
+.popup__main-text {
     padding: 0;
     margin: 0;
     font-size: 24px;
@@ -7,7 +7,7 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 1023px) {
-    .popup__text {
+    .popup__main-text {
         font-size: calc(18px + (24 - 18)*((100vw - 320px)/(1023 - 320)));
         line-height: calc(22px + (29 - 22)*((100vw - 320px)/(1023 - 320)));
     }
