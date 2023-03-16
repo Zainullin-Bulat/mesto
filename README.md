@@ -14,8 +14,8 @@
 * БЭМ Nested
 * Псевдоклассы CSS
 
-### JS
-* Использование перменных
+### JS (структура не по БЭМ Nested)
+* Использование переменных
 * Использование событий
 
 ### [Ссылка на проект &rarr;](https://zainullin-bulat.github.io/russian-travel/index.html)
